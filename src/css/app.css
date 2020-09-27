@@ -1,0 +1,18 @@
+.darkbg {
+  background-color: #343a40;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+td {padding:8px; margin:2px;}

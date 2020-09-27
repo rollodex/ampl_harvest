@@ -1,0 +1,257 @@
+<html>
+   <head>
+     <title>Ample Harvest</title>
+     <link href="http://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+     <link rel="stylesheet" href="./css/app.css" />
+     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script src="./js/abis.js"></script>
+     <script src="./js/web3.js"></script>
+     <script src="./js/app.js"></script>
+   </head>
+
+  <body class="darkbg overflow-y-hidden">
+    <nav class="flex items-center justify-center text-2xl font-serif font-extrabold flex-wrap bg-white p-6">
+
+
+      <div class="flex-1">
+        <div class="float-left">
+           <img src="./img/logo2.png"></img>
+        </div>
+        <div class="justify-center text-center">
+           Ample Harvest
+        </div>
+     </div>
+
+    </nav>
+
+    <section id="current" class="w-full h-screen darkbg">
+    </section>
+  </body>
+
+  <code id="main">
+    <div class="flex flex-wrap overflow-hidden md:-mx-2 lg:mx-6">
+
+    <div class="w-full overflow-hidden md:my-2 md:px-2 lg:w-1/3">
+      <!-- Column Content -->
+      <div class="flex flex-wrap overflow-hidden md:-mx-12">
+
+       <div class="w-1/2 h-12 bg-white ml-12 overflow-hidden md:my-12 md:px-12">
+           test
+       </div>
+
+      <div class="w-1/2 h-12 bg-white ml-12 overflow-hidden md:my-12 md:px-12">
+         test
+      </div>
+
+     </div>
+    </div>
+
+    <div class="w-full lg:h-screen  bg-white overflow-hidden md:my-2 md:px-2 lg:w-1/3">
+      <!-- Column Content -->
+      <center>
+      <table>
+        <thead>
+          <tr>
+            <td><b>Puts</b></td>
+            <td></td>
+            <td></td>
+             <td></td>
+            <td><b>Calls</b></td>
+    </tr>
+    <tr>
+      <td>Vol</td>
+      <td>Price</td>
+      <td class="border-l-2 border-r-2 border-black">Strike</td>
+      <td>Price</td>
+      <td>Vol</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td id="vol-10-p">0</td>
+      <td id="price-10-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center" >10%</td>
+      <td id="price-10-c">0</td>
+      <td id="vol-10-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-9-p">0</td>
+      <td id="price-9-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">9%</td>
+      <td id="price-9-c">0</td>
+      <td id="vol-9-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-8-p">0</td>
+      <td id="price-8-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">8%</td>
+      <td id="price-8-c">0</td>
+      <td id="vol-8-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-7-p">0</td>
+      <td id="price-7-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">7%</td>
+      <td id="price-7-c">0</td>
+      <td id="vol-7-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-6-p">0</td>
+      <td id="price-6-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center" >6%</td>
+      <td id="price-6-c">0</td>
+      <td id="vol-6-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-5-p">0</td>
+      <td id="price-5-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">5%</td>
+      <td id="price-5-c">0</td>
+      <td id="vol-5-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-4-p">0</td>
+      <td id="price-4-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">4%</td>
+      <td id="price-4-c">0</td>
+      <td id="vol-4-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-3-p">0</td>
+      <td id="price-3-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">3%</td>
+      <td id="price-3-c">0</td>
+      <td id="vol-3-c">0</td>
+    </tr>
+    <tr>
+
+    </tr>
+    <tr>
+      <td id="vol-2-p">0</td>
+      <td id="price-2-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">2%</td>
+      <td id="price-2-c">0</td>
+      <td id="vol-2-c">0</td>
+    </tr>
+    <tr>
+
+    </tr>
+    <tr>
+      <td id="vol-1-p">0</td>
+      <td id="price-1-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">1%</td>
+      <td id="price-1-c">0</td>
+      <td id="vol-1-c">0</td>
+    </tr>
+    <tr>
+
+    </tr>
+    <tr>
+      <td id="vol-0-p">0</td>
+      <td id="price-0-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center" >0</td>
+      <td id="price-0-c">0</td>
+      <td id="vol-0-c">0</td>
+    </tr>
+    <tr>
+
+    </tr>
+    <tr>
+      <td id="vol-1n-p">0</td>
+      <td id="price-1n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">-1%</td>
+      <td id="price-1n-c">0</td>
+      <td id="vol-1n-c">0</td>
+    </tr>
+    <tr>
+
+    </tr>
+    <tr>
+      <td id="vol-2n-p">0</td>
+      <td id="price-2n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">-2%</td>
+      <td id="price-2n-c">0</td>
+      <td id="vol-2n-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-3n-p">0</td>
+      <td id="price-3n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">-3%</td>
+      <td id="price-3n-c">0</td>
+      <td id="vol-3n-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-4n-p">0</td>
+      <td id="price-4n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">-4%</td>
+      <td id="price-4n-c">0</td>
+      <td id="vol-4n-c">0</td>
+    </tr>
+    <tr>
+      <td id="vol-5n-p">0</td>
+      <td id="price-5n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">-5%</td>
+      <td id="price-5n-c">0</td>
+      <td id="vol-5n-c">0</td>
+    </tr>
+     <tr>
+      <td id="vol-6n-p">0</td>
+      <td id="price-6n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black text-center">-6%</td>
+      <td id="price-6n-c">0</td>
+      <td id="vol-6n-c">0</td>
+    </tr>
+      <tr>
+      <td id="vol-7n-p">0</td>
+      <td id="price-7n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black">-7%</td>
+      <td id="price-7n-c">0</td>
+      <td id="vol-7n-c">0</td>
+    </tr>
+     <tr>
+      <td id="vol-8n-p">0</td>
+      <td id="price-8n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black">-8%</td>
+      <td id="price-8n-c">0</td>
+      <td id="vol-8n-c">0</td>
+    </tr>
+     <tr>
+      <td id="vol-9n-p">0</td>
+      <td id="price-9n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black">-9%</td>
+      <td id="price-9n-c">0</td>
+      <td id="vol-9n-c">0</td>
+    </tr>
+     <tr>
+      <td id="vol-10n-p">0</td>
+      <td id="price-10n-p">0</td>
+      <td class="border-l-2 border-r-2 border-black">-10%</td>
+      <td id="price-10n-c">0</td>
+      <td id="vol-10n-c">0</td>
+    </tr>
+  <tbody>
+</table>
+</center>
+    </div>
+
+    <div class="w-full overflow-hidden md:my-2 md:px-2 lg:w-1/3">
+      <!-- Column Content -->
+      <div class="flex flex-wrap overflow-hidden md:-mx-12">
+
+       <div class="w-1/2 h-12 bg-white ml-12 overflow-hidden my-4 py-2 px-2">
+           <span class="inline" data-feather="clock"></span>
+       </div>
+
+      <div class="w-1/2 h-12 bg-white ml-12 overflow-hidden my-10 md:px-12">
+         test
+      </div>
+
+     </div>
+    </div>
+
+</div>
+  </code>
+
+</html>
